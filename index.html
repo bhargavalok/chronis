@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A0B10" />
+  <meta name="description" content="Chronis — understand your behavioral patterns over time. Sleep, focus, social, mood — all in one place." />
+  <title>Chronis — Behavioral Intelligence</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <div class="app-shell" role="main">
+
+    <!-- Fake status bar -->
+    <div class="status-bar" aria-hidden="true">
+      <span class="sb-time" id="sb-clock">11:04</span>
+      <div class="sb-indicators">
+        <div class="sb-signal">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="sb-dot"></span>
+      </div>
+    </div>
+
+    <!-- Scrollable content -->
+    <div id="main-content">
+      <div id="view-container"></div>
+    </div>
+
+    <!-- Bottom navigation -->
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item active" data-view="dashboard" id="nav-dashboard" aria-label="Dashboard">
+        <span class="nav-icon" aria-hidden="true">⬡</span>
+        <span class="nav-label">Home</span>
+      </button>
+      <button class="nav-item" data-view="insights" id="nav-insights" aria-label="Insights">
+        <span class="nav-icon" aria-hidden="true">◈</span>
+        <span class="nav-label">Insights</span>
+      </button>
+      <button class="nav-item" data-view="timeline" id="nav-timeline" aria-label="Timeline">
+        <span class="nav-icon" aria-hidden="true">⌇</span>
+        <span class="nav-label">Timeline</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    // Live clock in status bar
+    function updateClock() {
+      const now = new Date();
+      const h = now.getHours().toString().padStart(2, "0");
+      const m = now.getMinutes().toString().padStart(2, "0");
+      const el = document.getElementById("sb-clock");
+      if (el) el.textContent = `${h}:${m}`;
+    }
+    updateClock();
+    setInterval(updateClock, 30000);
+  </script>
+
+</body>
+</html>
