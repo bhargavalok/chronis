@@ -108,4 +108,8 @@ The app avoids the word "healthy." It avoids prescriptive language entirely. Chr
 
 
 ## Screenshots
-[./assets]
+1. https://github.com/bhargavalok/chronis/blob/main/assets/1.png
+2. https://github.com/bhargavalok/chronis/blob/main/assets/2.png
+3. https://github.com/bhargavalok/chronis/blob/main/assets/3.png
+4. https://github.com/bhargavalok/chronis/blob/main/assets/4.png
+5. https://github.com/bhargavalok/chronis/blob/main/assets/5.png
