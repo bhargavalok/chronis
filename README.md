@@ -105,3 +105,7 @@ chronis/
 The color system uses a warm dark palette — deep blue-black backgrounds with a gold accent (`#D4A96A`) and muted teal secondary (`#5FADA8`). The warmth is intentional: behavioral data is personal, and a cold corporate palette would feel out of place. Typography pairs Syne (display/headings) with DM Sans (body) and JetBrains Mono (data values).
 
 The app avoids the word "healthy." It avoids prescriptive language entirely. Chronis describes patterns — it doesn't diagnose or advise. This is a deliberate product decision, not a limitation of the prototype.
+
+
+## Screenshots
+[./assets]
